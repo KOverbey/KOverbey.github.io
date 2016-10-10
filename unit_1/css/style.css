@@ -1,0 +1,10 @@
+body {
+	background: url(bkgrnd.jpg) lightgray;
+}	
+
+h1 {
+	color: black;
+	text-align: center;
+	margin-top: 1em;
+	font-weight: bold;
+}
