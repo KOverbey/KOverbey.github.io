@@ -1,0 +1,29 @@
+body {
+	background: url(../images/Kindle.jpg) lightgray;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100vh;
+}	
+
+h1 {
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 3em;
+}
+h3 {
+	color: black;
+	text-align:center;
+	font-style: italic;
+}
+p {
+	color: black;
+	text-align: center;
+	padding-top: 1em;
+}
+img {
+	opacity:0.2;
+}
+ul {
+	text-align: center;
+}
