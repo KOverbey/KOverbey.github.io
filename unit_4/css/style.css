@@ -18,13 +18,30 @@ p {
 }
 ul {
 	font-family: Georgia;
-	text-align: justify;
 	list-style-position: inside;
-	padding-left: 5em;
 }
+
 img {
 	float: center;
 	max-width: 100vh;
+}
+
+.projects .column {
+	width: 50%;
+}
+
+.column {
+	float: left;
+}
+
+.services .column{
+	width: 33.33%;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .about {
@@ -40,7 +57,7 @@ img {
 }
 .ebook {
 	font-family: "Coming Soon", Georgia;
-	text-align: left;
+	text-align: center;
 	padding-left: 4 em;
 	font-size: 20px;
 }
@@ -55,9 +72,8 @@ img {
 .editorial {
 	font-family: "Coming Soon", Georgia;
 	font-size: 20px;
-	text-align: right;
-	padding-right: 4 em;
-}
+	text-align: center;
+	}
  
 .ul2 {
 	text-align: center;
@@ -70,4 +86,8 @@ img {
 	text-align: right;
 	padding-left: 14 em;
 	list-style-position: inside;
+}
+
+#project-1-bg {
+	background-image: url(...);
 }
