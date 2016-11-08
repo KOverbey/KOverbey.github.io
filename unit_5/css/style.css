@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
+
+h1 {
+	font-family: "Homemade Apple";
+	text-align: center;
+	padding-top: 3em;
+}
+
+h3 {
+	font-family: Georgia;
+	text-align:center;
+}
+p {
+	font-family: Georgia;
+	text-align: center;
+	padding-top: 1em;
+}
+ul {
+	font-family: Georgia;
+	list-style-position: inside;
+	padding: 5px 25px 5px 25px;
+}
+
+img {
+	float: center;
+	max-width: 100vh;
+}
+
+.column {
+	float: left;
+}
+
+.projects .column {
+	width: 50%;
+}
+
+.services .column{
+	width: 33.33%;
+}
+
+.aside .column{
+	width: 33.33%;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.aside {
+	text-align: center;
+	padding: 20px;
+	float: left;
+	background-color:#FFC675;
+	border: 1px black solid;
+}
+
+.services {
+	background-color: #E89C6C;
+	padding: 20px;
+	border: 1px black solid;
+}
+ 
+.headers {
+	font-family: "Homemade Apple", cursive;
+	font-size: 25px;
+}
+.ebook {
+	font-family: "Coming Soon", Georgia;
+	text-align: center;
+	padding-left: 4 em;
+	font-size: 20px;
+}
+ 
+.print {
+	font-family: "Coming Soon", Georgia;
+	font-size: 20px;
+	text-align: center;
+	padding-left: 1 em;
+}
+ 
+.editorial {
+	font-family: "Coming Soon", Georgia;
+	font-size: 20px;
+	text-align: center;
+	}
+
+.contact {
+	background-color: #FFC675;
+	border: 1px black solid;
+	padding: 20px;
+}
+#project-1-bg {
+	background-image: url(...);
+}
+
+header {
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
+	background-image: url(...);
+}
+
+footer {
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
+	text-align: center;
+}
+
+nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+	text-align: center;
+	font-family: "Coming Soon";
+	font-size: 1em;
+}
