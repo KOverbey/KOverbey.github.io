@@ -1,18 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Coming+Soon);
 @import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
-
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+);
 h1 {
 	font-family: "Homemade Apple";
 	text-align: center;
-	padding-top: 100px;
 	color: black;
+	font size:40px;
 }
 
 h3 {
 	font-family: Georgia;
 	text-align:center;
 	color: black;
-	padding: 50px;
 }
 
 header {
@@ -20,6 +20,13 @@ header {
 	background-size: cover;
 	position: relative;
 	height: 100vh;
+}
+
+.header_text {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
 }
 
 p {
