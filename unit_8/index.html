@@ -3,12 +3,12 @@
 <head>
 	<title>Overbey Book Designs</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1"
-</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"</head>
 <body>
 	<header>
 		<nav>
-		<ol>
+		<ol class="navbar" id="home">
+		<li><a href="#home"><i class="fa fa-home"></i></a></li>
 		<li><a href="#services">Services</a></li>
 		<li><a href="#about">About</a></li>
 		<li style="float:right"><a href="mailto:kaylaoverbey@gmail.com?Subject=Build me a better book!"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
@@ -29,24 +29,25 @@
 
 
 <div class="ebook">
-<section class="ebook clearfix" id="ebook">
+<section class="ebook clearfix">
 	<div class="column">
-	<p class="services">ebook publishing</p>
+	<div class="column-services"><p class="services">ebook publishing</p>
 		<ul>
 		<li>professional layout starting from Word, PDF, or other digital document</li>
 		<li>high-quality files compatible with every ereader (Kindle, iPad, NOOK, etc.)</li><br>
 		<li>customized with the theme and story of your book in mind</li>
 		<li>creation of all necessary files including .epub, .mobi, and .pdf</li>
 		</ul>
+		</div>
 	</div>
-	<img src="images/kindle.png" alt="iPad" id="iPad" float="right" style="max-width:30%;max-height:30%;">
+	<div class="column"><img class="columnimage" src="images/kindle.png" alt="Kindle"></div>
  </section>
  </div>
 
 <div class="print">
-<section class="print clearfix" id="print">
+<section class="print clearfix">
 	<div class="column">
-	<p class="services">print book design</p>
+	<div class="column-services"><p class="services">print book design</p>
 		<ul>
 		<li>customized layout that meets industry standards</li><br>
 		<li>proofs always sent for review and approval</li><br>
@@ -54,21 +55,23 @@
 		<li>thorough quality check always included</li>
 		</ul>
 	</div>
-	<img src="images/ipad.png" alt="iPad" id="iPad" float="right" style="width:30%;height:30%;">
+	</div>
+	<div class="column"><img class="columnimage" src="images/ipad.png" alt="iPad"></div>
 </section>
 </div>
 
 <div class="editorial">
-<section class="editorial clearfix" id="editorial">
+<section class="editorial clearfix">
 	<div class="column">
-	<p class="services">editorial</p>
+	<div class="column-services"><p class="services">editorial</p>
 	<ul>
 		<li>line edit: intensive structural edit focusing on tone, style, language, etc.</li>
 		<li>copy edit: word-by-word edit considering sentence fluency and consistency</li>
 		<li>proofread: word-by-word edit with attention paid specifically to punctuation and grammar</li>
 	</ul>
 	</div>
-	<img src="images/nook.png" alt="iPad" id="iPad" float="right" style="width:30%;height:30%;">
+	</div>
+	<div class="column"><img class="columnimage" src="images/nook.png" alt="NOOK"></div>
 </div>
 </section>
 
@@ -84,11 +87,10 @@
 
 	<div class="about" id="about">
 	<p class="headers">about Overbey Book Designs</p>
-	<img class="Kayla" src="images/Kayla2.png" alt="Kayla Overbey" id="Kayla Overbey" style="width:20%;height:20%;">
+	<img class="Kayla" src="images/Kayla2.png" alt="Kayla Overbey">
 		<p class="about">Hi! My name is Kayla Overbey. After graduating from the University of Kansas in 2014 with degrees in journalism and English, I transplanted to NYC to join the publishing industry. I specialize in print and digital production. I love spending time with books, Netflix, and my two cats.<br></p></div>
-	<div class="button"><p class="button"><a href="http://www.kaylaoverbey.com/my-resume">Read my resume.</a></p>
-	</div>
-
+	<a class="button" href="http://www.kaylaoverbey.com/my-resume">Read my resume</a>
+	
 <footer>
 <section class="footer" id="footer">
 	<p class="headers">What are you waiting for?</p>

@@ -7,7 +7,7 @@ body {
 }
 /*NAVIGATION BAR*/
 
-ol {
+ol.navbar {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -31,7 +31,7 @@ li a {
 }
 
 li a:hover {
-	background-color: #111
+	background-color: #e7e7e7
 }
 
 /**-->HEADER<--**/
@@ -94,12 +94,13 @@ a:visited {
 }
 
 
-
 /*TEXT*/
 .services {
 	font-family: "Coming Soon", Georgia;
 	font-size: 2em;
 	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 /*Bullet text*/
 ul {
@@ -108,8 +109,16 @@ ul {
 	padding: .25em 1.5em .25em 1.5em;
 }
 
+.columnimage{
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
 .print .column{
 	width: 50%;
+	height: 56.25vw;
+	position: relative;
 }
 
 .print {
@@ -119,40 +128,50 @@ ul {
 	background-image: url(../images/hero.jpg);
 }
 
-.editorial .column{
+.ebook .column {
+	background-color: white;
+	height: 56.25vw;
 	width: 50%;
+	position: relative;
 }
 
-.editorial {
-	font-family: "Coming Soon", Georgia;
-	font-size: 1em;
-	padding: 2em;
-	background-color: white;
-	}
-
-.ebook .column{
-	width: 50%;
+.column-services {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
 }
 
 .ebook {
 	font-family: "Coming Soon", Georgia;
 	font-size: 1em;
-	padding: 2em;
 	background-color: white;
+	text-align: center;
 }
+.editorial .column{
+	width: 50%;
+	height: 56.25vw;
+	position: relative;
+}
+
+.editorial {
+	font-family: "Coming Soon", Georgia;
+	font-size: 1em;
+	background-color: white;
+	}
 
 /**-->ABOUT ME<--**/
 .about {
-	padding-left: 5em;
-	padding-right: 5em;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	text-align: left;
+	display: block;
+	padding: 1em 8em 1em 8em;
+	text-align: center;
 	background-color: white;
 }
 
-.images {
-	text-align: center;
+.Kayla {
+	display: block;
+	width: 30%;
+	margin: 0 auto; /*centers image*/
 }
 /*About Overbey Book Designs & What Are You Waiting For?*/
 
@@ -172,12 +191,64 @@ footer {
 .button {
 	font-family: "Homemade Apple";
 	background-color: white;
+	display: block;
 	font-size: 1em;
+	margin: 0 auto 2em auto;
 	text-align: center;
-	border: 1px solid #e7e7e7;
+	border: 2px solid #e7e7e7;
+	width: 200px;
 }
 .button:hover {
 	background-color: #e7e7e7;
 	color: black;
 }
 
+/*columns will stack naturally, size width to 100%
+and change height to auto and position: relative*/
+
+@media only screen and (max-width: 760px){
+	.ebook .column {
+		background-color: white;
+		height: auto;
+		width: 100%;
+		position: relative;
+	}
+	.print .column {
+		background-color: white;
+		height: auto;
+		width: 100%;
+		position: relative;
+	}
+	.editorial .column {
+		background-color: white;
+		height: auto;
+		width: 100%;
+		position: relative;
+	}
+}
+@media only screen and (max-width:950px){
+	.about {
+		display: block;
+		padding: 1em 4em 1em 4em;
+		text-align: center;
+		background-color: white;
+	}
+	.Kayla {
+		display: block;
+		width: 40%;
+		margin: 0 auto; /*centers image*/
+	}
+}
+@media only screen and (max-width:600px){
+	.about {
+		display: block;
+		padding: 1em 1em 1em 1em;
+		text-align: center;
+		background-color: white;
+	}
+	.Kayla {
+		display: block;
+		min-width: 300px
+		margin: 0 auto; /*centers image*/
+	}
+}
