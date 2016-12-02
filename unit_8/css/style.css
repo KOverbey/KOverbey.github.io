@@ -207,23 +207,30 @@ footer {
 and change height to auto and position: relative*/
 
 @media only screen and (max-width: 760px){
+	.columnimage{
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	position: initial;
+	transform: none;
+	}
 	.ebook .column {
 		background-color: white;
 		height: auto;
 		width: 100%;
-		position: relative;
+		position: absolute;
 	}
 	.print .column {
 		background-color: white;
 		height: auto;
 		width: 100%;
-		position: relative;
+		position: absolute;
 	}
 	.editorial .column {
 		background-color: white;
 		height: auto;
 		width: 100%;
-		position: relative;
+		position: absolute;
 	}
 }
 @media only screen and (max-width:950px){
