@@ -51,7 +51,7 @@ h1 {
 }
 
 .header_text {
-	position: absolute;
+	position: relative;
 	top: 50%;
 	width: 100%;
 	transform: translateY(-50%);
@@ -69,6 +69,8 @@ p {
 	font-family: Georgia;
 	text-align: center;
 	padding-top: 1em;
+	padding-left: 10em;
+	padding-right: 10em;
 }
 
 /**--> SERVICES <--**/
@@ -111,7 +113,7 @@ ul {
 
 .columnimage{
 	display: block;
-	max-width: 100%;
+	max-width: 60%;
 	margin: 0 auto;
 }
 
@@ -136,7 +138,7 @@ ul {
 }
 
 .column-services {
-	position: absolute;
+	position: relative;
 	top: 50%;
 	width: 100%;
 	transform: translateY(-50%);
@@ -182,10 +184,21 @@ ul {
 
 
  /**FOOTER**/
-footer {
+.mail {
 	background-image: url(../images/hero.jpg);
 	text-align: left;
 	padding: 1em;
+}
+
+.footer {
+	background-image: url(../images/hero.jpg);
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ffffff;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
 }
 
 .button {
@@ -218,19 +231,19 @@ and change height to auto and position: relative*/
 		background-color: white;
 		height: auto;
 		width: 100%;
-		position: absolute;
+		position: initial;
 	}
 	.print .column {
 		background-color: white;
 		height: auto;
 		width: 100%;
-		position: absolute;
+		position: initial;
 	}
 	.editorial .column {
 		background-color: white;
 		height: auto;
 		width: 100%;
-		position: absolute;
+		position: initial;
 	}
 }
 @media only screen and (max-width:950px){
@@ -245,6 +258,13 @@ and change height to auto and position: relative*/
 		width: 40%;
 		margin: 0 auto; /*centers image*/
 	}
+	p {
+	font-family: Georgia;
+	text-align: center;
+	padding-top: 1em;
+	padding-left: 6em;
+	padding-right: 6em;
+}
 }
 @media only screen and (max-width:600px){
 	.about {
@@ -253,9 +273,68 @@ and change height to auto and position: relative*/
 		text-align: center;
 		background-color: white;
 	}
+
 	.Kayla {
 		display: block;
 		min-width: 300px
 		margin: 0 auto; /*centers image*/
+	}
+
+	ol.navbar {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #ffffff;
+		opacity: 0.6;
+		filter: alpha(opacity=60);
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: #000000;
+		font-weight: bold;
+		text-align: center;
+		padding: 1em;
+		text-decoration: none;
+	}
+
+	header {
+		background-color: #B5FFF7;
+		background-size: cover;
+		position: relative;
+		height: 100vh;
+	}
+
+	h1 {
+		font-family: "Homemade Apple";
+		text-align: center;
+		color: black;
+		font size: 3em;
+	}
+
+	.header_text {
+		position: relative;
+		top: 50%;
+		width: 100%;
+		transform: translateY(-50%);
+	}
+
+	h3 {
+		font-family: Georgia;
+		text-align:center;
+		color: black;
+	}
+
+	p {
+		font-family: Georgia;
+		text-align: center;
+		padding-top: 1em;
+		padding-left: 3em;
+		padding-right: 3em;
 	}
 }
