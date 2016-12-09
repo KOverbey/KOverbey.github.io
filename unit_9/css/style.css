@@ -1,0 +1,406 @@
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+);
+body {
+	font-size: 16px;
+}
+/*NAVIGATION BAR*/
+
+ol.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ffffff;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+
+
+.navbar li {
+	float: left;
+}
+
+#hamburger {
+	display: none;
+}
+
+.right {
+	float: right;
+}
+
+.navbar li a {
+	display: block;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	padding: 1em;
+	text-decoration: none;
+}
+
+.navbar li a:hover {
+	background-color: #e7e7e7
+}
+
+/**-->HEADER<--**/
+/*hero image*/
+header {
+	background-image: url(../images/hero.jpg);
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+}
+/*Overbey Book Designs*/
+h1 {
+	font-family: "Homemade Apple";
+	text-align: center;
+	color: black;
+	font size: 3em;
+}
+
+.header_text {
+	position: relative;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+/*Building better books*/
+h3 {
+	font-family: Georgia;
+	text-align:center;
+	color: black;
+}
+
+/*header paragraph text*/
+p {
+	font-family: Georgia;
+	text-align: center;
+	padding-top: 1em;
+	padding-left: 10em;
+	padding-right: 10em;
+}
+
+/**--> SERVICES <--**/
+/*structure*/
+.column {
+	float: left;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*Links*/
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+}
+
+
+/*TEXT*/
+.services {
+	font-family: "Coming Soon", Georgia;
+	font-size: 2em;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+/*Bullet text*/
+ul {
+	display: block;
+	font-family: Georgia;
+	list-style-position: inside;
+	padding-left: 4em;
+}
+
+.columnimage{
+	display: block;
+	max-width: 60%;
+	margin: 0 auto;
+	top: 50%;
+	transform: translateY(-50%);
+	position: relative;
+}
+
+.print .column{
+	width: 50%;
+	height: 56.25vw;
+	position: relative;
+}
+
+.print {
+	font-family: "Coming Soon", Georgia;
+	font-size: 1em;
+	background-image: url(../images/hero.jpg);
+}
+
+.ebook .column {
+	background-color: white;
+	height: 56.25vw;
+	width: 50%;
+	position: relative;
+}
+
+.column-services {
+	position: relative;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+.ebook {
+	font-family: "Coming Soon", Georgia;
+	font-size: 1em;
+	background-color: white;
+}
+.editorial .column{
+	width: 50%;
+	height: 56.25vw;
+	position: relative;
+}
+
+.editorial {
+	font-family: "Coming Soon", Georgia;
+	font-size: 1em;
+	background-color: white;
+	}
+
+/**-->ABOUT ME<--**/
+.about {
+	display: block;
+	padding: 1em 8em 1em 8em;
+	text-align: center;
+	background-color: white;
+}
+
+.Kayla {
+	display: block;
+	width: 30%;
+	margin: 0 auto; /*centers image*/
+}
+/*About Overbey Book Designs & What Are You Waiting For?*/
+
+.headers {
+	font-family: "Homemade Apple";
+	font-size: 1.5em;
+}
+
+
+ /**FOOTER**/
+.mail {
+	background-image: url(../images/hero.jpg);
+	text-align: left;
+	padding: 1em;
+}
+
+.footer {
+	background-image: url(../images/hero.jpg);
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ffffff;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+.button {
+	font-family: "Homemade Apple";
+	background-color: white;
+	display: block;
+	font-size: 1em;
+	margin: 0 auto 2em auto;
+	text-align: center;
+	border: 2px solid #e7e7e7;
+	width: 200px;
+}
+.button:hover {
+	background-color: #e7e7e7;
+	color: black;
+}
+
+/*columns will stack naturally, size width to 100%
+and change height to auto and position: relative*/
+
+		@media only screen and (max-width: 760px){
+			ul {
+				font-family: Georgia;
+				list-style-position: inside;
+				padding: 0;
+}
+			.columnimage{
+				display: block;
+				width: 50%;
+				transform: translateY(0);
+				top: 0%;
+			}
+			.column-services {
+				top: 0%;
+				transform: translateY(0);
+			}
+
+			.ebook .column {
+				background-color: white;
+				height: auto;
+				width: 100%;
+			}
+			.print .column {
+				height: auto;
+				width: 100%;
+			}
+			.editorial .column {
+				background-color: white;
+				height: auto;
+				width: 100%;
+			}
+			.ebook {
+				padding: 2em;
+				font-family: "Coming Soon", Georgia;
+				font-size: 1em;
+				background-color: white;
+			}
+			.print {
+				padding: 2em;
+				font-family: "Coming Soon", Georgia;
+				font-size: 1em;
+				background-image: url(../images/hero.jpg);
+		}
+			.editorial {
+				padding: 2em;
+				font-family: "Coming Soon", Georgia;
+				font-size: 1em;
+				background-color: white;
+				}
+		}
+
+		@media only screen and (max-width:950px){
+			.about {
+				display: block;
+				padding: 1em 4em 1em 4em;
+				text-align: center;
+				background-color: white;
+			}
+			.Kayla {
+				display: block;
+				width: 40%;
+				margin: 0 auto; /*centers image*/
+			}
+			p {
+			font-family: Georgia;
+			text-align: center;
+			padding-top: 1em;
+			padding-left: 6em;
+			padding-right: 6em;
+		}
+		}
+		@media only screen and (max-width:600px){
+			.about {
+				display: block;
+				padding: 1em 1em 1em 1em;
+				text-align: center;
+				background-color: white;
+			}
+
+			.right {
+				float: none;
+			}
+
+			#hamburger {
+				padding: 10px;
+				display: block;
+				background-color: #ffffff;
+				opacity: 0.6;
+			}
+
+			.Kayla {
+				display: block;
+				min-width: 300px
+				margin: 0 auto; /*centers image*/
+			}
+
+			ol.navbar {
+				padding: 0;
+				height: 0;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #ffffff;
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+				-webkit-transition: all 1s ease-in-out;
+		  -moz-transition: all 1s ease-in-out;
+		  -o-transition: all 1s ease-in-out;
+		  transition: all 1s ease-in-out;
+			}
+			ul {
+	display: block;
+	font-family: Georgia;
+	list-style-position: inside;
+	padding: 0;
+}
+
+			.navbar li {
+			float: none;
+			width: 100%;
+		}
+
+		.navbar.active {
+		height: 300px;
+		}
+
+			.navbar li a {
+				display: block;
+				color: #000000;
+				font-weight: bold;
+				text-align: center;
+				padding: 1em;
+				text-decoration: none;
+				float: none;
+				width: 100%;
+			}
+
+			header {
+				background-color: #B5FFF7;
+				background-size: cover;
+				position: relative;
+				height: 100vh;
+			}
+
+			h1 {
+				font-family: "Homemade Apple";
+				text-align: center;
+				color: black;
+				font size: 3em;
+			}
+
+			.header_text {
+				position: relative;
+				top: 50%;
+				width: 100%;
+				transform: translateY(-50%);
+			}
+
+			h3 {
+				font-family: Georgia;
+				text-align:center;
+				color: black;
+			}
+
+			p {
+				font-family: Georgia;
+				text-align: center;
+				padding-top: 1em;
+				padding-left: 3em;
+				padding-right: 3em;
+			}
+		}
